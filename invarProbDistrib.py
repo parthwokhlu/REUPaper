@@ -32,7 +32,7 @@ while i<steps:
     i +=1
 
 
-print("yas = ", pi/steps)
+print("invar = ", pi/steps)
 print("")
 
 steps = 10**3
@@ -44,7 +44,7 @@ while i<steps:
     i+=1
 
 print("A^n = \n", A_n, "\n")
-print("yas = ", A_n[0])
+print("invar = ", A_n[0])
 print ("")
 
 values, left = scipy.linalg.eig(A, right=False, left = True)
@@ -55,4 +55,4 @@ print("")
 
 pi = left[:,0]
 pi_normalized = [(x/np.sum(pi)).real for x in pi]
-print (pi_normalized)
+print ("invar = ", pi_normalized)
